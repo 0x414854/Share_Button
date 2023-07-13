@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(150deg, #161819 15%, white);
+    background-repeat: no-repeat;
+    overflow-x: auto;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    height: 100px;
+}
+.title {
+    color: white;
+    font-size: 40px;
+    background: inherit;
+    width: 50%;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgb(30, 31, 20), 2px 2px 3px rgb(255, 255, 255);
+}
+/* Content */
+.share_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    margin: 40px auto;
+    background: #c9c9d1;
+    overflow: hidden;
+    position: relative;
+    transition: linear 0.3s;
+}
+.share_button span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #161819;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: linear 0.4s;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.share_button:hover span {
+    transform: translateX(-100%);
+    transition-delay: 0.25s;
+}
+.share_button a {
+    flex: 1;
+    font-size: 30px;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: linear 0.3s;
+}
+.share_button:hover {
+    transform: scale(1.05);
+}
+.share_button:hover a {
+    opacity: 1;
+    transform: translateX(0);
+}
+.share_button a:nth-of-type(1) {
+    transition-delay: 1s;
+}
+.share_button a:nth-of-type(2) {
+    transition-delay: 0.9s;
+}
+.share_button a:nth-of-type(3) {
+    transition-delay: 0.8s;
+}
+.share_button a:nth-of-type(4) {
+    transition-delay: 0.7s;
+}
+.share_button a:nth-of-type(5) {
+    transition-delay: 0.6s;
+}
+.share_button a:nth-of-type(6) {
+    transition-delay: 0.5s;
+}
+.share_button a:nth-of-type(7) {
+    transition-delay: 0.4s;
+}
+.bi-share-fill {
+    margin-right: 3%;
+}
+.bi-facebook {
+    color: #0a66c2;
+}
+.bi-facebook:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background:#0a66c2;
+    color: #fff;
+}
+.bi-instagram {
+    color: #dc2743;
+}
+.bi-instagram:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+}
+.bi-twitter {
+    color: #1da1f2;
+}
+.bi-twitter:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background: #1da1f2;
+    color: #fff;
+}
+.bi-linkedin {
+    color: #0a66c2;
+}
+.bi-linkedin:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background:#0a66c2;
+    color: #fff;
+}
+.bi-github:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+}
+.bi-pinterest {
+    color: #E60023;
+}
+.bi-pinterest:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background:#E60023;
+    color: #fff;
+}
+.bi-whatsapp {
+    color: #25D366;
+}
+.bi-whatsapp:hover{
+    padding: 25%;
+    border-radius: 50px;
+    background: #25D366;
+    color: #fff;
+}
